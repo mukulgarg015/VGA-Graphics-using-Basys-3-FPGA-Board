@@ -74,12 +74,12 @@ module vga_game(
     
     
     always @(*)
-begin
+    begin
         if(((H_count<= x_reg + 2 + HBP)&&(H_count>= x_reg - 2 + HBP)) && ((V_count<= y_reg + 2 + VBP) &&(V_count >= y_reg - 2 + VBP)))
         line_on=1;
         else
         line_on=0;
-end
+    end
   
   ///////////////////////////////////////////////////////////////////////////  
    
